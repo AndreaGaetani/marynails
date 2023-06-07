@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+:root {
+  --title-pink: #df93a2;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 80dvh;
+  background: url(assets/poisv1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.header-container {
+  position: fixed;
+  top: 0;
+  padding-top: 10px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+  background: #fff9f9;
+  box-shadow: 0 .3rem .3rem 0 rgba(73, 0, 70, 0.3);
+}
+
+.header-container-who {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header-container a {
+  text-decoration: none;
+  color: var(--title-pink);
+  font-weight: 800;
+  font-family: "Poppins", cursive;
+  line-height: 1.2;
+  transition: .25s ease-in-out;
+}
+
+.header-container a h1 {
+  font-family: "Rampart One", cursive;
+  font-size: 3.8rem;
+}
+
+.header-container a p {
+  font-size: 2.1rem;
+}
+
+.header-container a:hover {
+  color: black;
+}
+
+.header-container .header-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: .25s ease-in-out;
+
+}
+
+.header-container .header-links a {
+  font-size: 1.9rem;
+  margin-left: 35px;
+}
+
+.header-container .header-links a:hover {
+  color: black;
+}
+
+@media(max-width: 726px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .header-container a h1 {
+    font-size: 2rem !important;
+  }
+  .header-links{
+    width: 100%;
+  }
+  .header-links a {
+    margin-left: 0 !important;
+    margin-bottom: 5px;
+    font-size: 1.4rem !important;
+  }
+}
+
+.main {
+  margin-top: 80px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.main .whoami {
+  display: flex;
+  justify-content: center;
+  color: var(--title-pink);
+  font-family: "Rampart One", cursive;
+  font-size: 3.8rem;
+  font-weight: 800;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.main a:hover {
+  color: black;
+}
+
+.main-container {
+  display: flex;
+  margin-top: 25px;
+}
+
+.main-container.card-box {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 400px;
+  margin-bottom: 20px;
+
+  background-color: rgb(255, 218, 255);
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.card-box img {
+  object-fit: cover;
+  background-color: rgb(255, 218, 255);
+}
+
+.card-box.text {
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 40px;
+}
+
+.card-box.text h1 {
+  margin-left: 30px;
+  margin-bottom: 25px;
+  color: var(--title-pink);
+  font-size: 5rem;
+  font-family: "Rampart One", sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.card-box.text p {
+  margin-left: 50px;
+  color: var(--title-pink);
+  font-size: 2.8rem;
+  font-family: "Poppins", sans-serif;
+  
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.334);
+  line-height: 1.2;
+}
+
+@media(max-width: 768px) {
+  .card-box.text p {
+    font-size: 1.8rem;
+  }
+}
+
+@media(max-width: 425px) {
+  .main-container img {
+    width: 35%;
+    height: 100%;
+  }
+
+  .main-container h1 {
+    font-size: 3.8rem !important;
+    text-align: center;
+    margin-left: 15px !important;
+  }
+  .main-container p {
+    font-size: 1.3rem !important;
+    margin: 0 !important;
+    margin-left: 20px !important;
+    line-height: 1.5 !important;
+    padding: 0 !important;
+    text-align: center;
+  }
+}
+
+hr {
+  border: 2px solid var(--title-pink);
+}
+
+@media(max-width: 400px) {
+  .header-container {
+    padding-right: 35px;
+  }
+}
+
+.where {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.card-box.text .where-link {
+  text-decoration: none;
+  text-align: center;
+  margin-left: 50px;
+  color: var(--title-pink);
+  font-size: 2.8rem;
+  font-family: "Poppins", sans-serif;
+  
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.334);
+}
+
+.card-box.text .where-link:hover {
+  color: black;
+}
